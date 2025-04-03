@@ -9072,10 +9072,18 @@
             class_loaded: "_lazy-loaded",
             use_native: true
         });
+        let video = document.getElementById("video");
+        let script_button = document.querySelector(".video__prewiew");
+        let previewImage = document.querySelector(".video__image");
+        script_button.addEventListener("click", (function() {
+            previewImage.style.display = "none";
+            script_button.style.display = "none";
+            video.style.display = "block";
+            video.play();
+        }));
         window["FLS"] = true;
         isWebp();
         menuInit();
         spollers();
-        flsScroll.headerScroll();
     })();
 })();
