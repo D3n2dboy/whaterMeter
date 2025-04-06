@@ -5967,7 +5967,7 @@ PERFORMANCE OF THIS SOFTWARE.
         }
         const lightgallery_es5 = lightGallery;
         var lg_thumbnail_min = __webpack_require__(97);
-        var lg_zoom_min = __webpack_require__(86);
+        __webpack_require__(86);
         const galleries = document.querySelectorAll("[data-gallery]");
         if (galleries.length) {
             let galleyItems = [];
@@ -5975,7 +5975,7 @@ PERFORMANCE OF THIS SOFTWARE.
                 galleyItems.push({
                     gallery,
                     galleryClass: lightgallery_es5(gallery, {
-                        plugins: [ lg_zoom_min, lg_thumbnail_min ],
+                        plugins: [ lg_thumbnail_min ],
                         licenseKey: "7EC452A9-0CFD441C-BD984C7C-17C8456E",
                         speed: 300
                     })
