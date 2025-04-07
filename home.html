@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250407140722">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250407222309">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,6 +28,7 @@
 									<li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
 									<li class="menu__item"><a href="#" class="menu__link">Гарантии</a></li>
 									<li class="menu__item"><a href="#" class="menu__link">Вопросы</a></li>
+									<!-- <li class="menu__item"><a class="ltnk-test" href="#">Тест</a></li> -->
 								</ul>
 							</nav>
 						</div>
@@ -116,7 +117,7 @@
 									подберем удобную дату и время</p>
 
 							</div>
-							<a data-popup="#popup2" class="item-services__link" href="#">Узнать подробнее</a>
+							<button data-popup="#popup2" class="button">Подробнее</button>
 						</li>
 
 						<li class="services__item item-services">
@@ -126,7 +127,7 @@
 									подберем удобную дату и время</p>
 
 							</div>
-							<a data-popup="#popup2" class="item-services__link" href="#">Узнать подробнее</a>
+							<button data-popup="#popup2" class="button">Подробнее</button>
 						</li>
 
 						<li class="services__item item-services">
@@ -657,22 +658,22 @@
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close"></button>
 				<div class="popup__text">
-					<div class="stage__item">
-						<div class="stage__body">
-							<div class="stage__img">
-								ФОТО
-							</div>
-							<div class="stage__main">
-								<div class="stage__label">ЗАГОЛОВОЛК</div>
-								<p class="stage__text">текст</p>
-							</div>
+					<div class="services-popup">
+						<div class="services-popup__photo">
+							<picture><source srcset="img/about/01.webp" type="image/webp"><img src="img/about/01.png" alt="01"></picture>
+						</div>
+						<div class="services-popup__title">
+							Заголовок
+						</div>
+						<div class="services-popup__text">
+							Текст
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20250407140722"></script>
+	<script src="js/app.min.js?_v=20250407222309"></script>
 </body>
 
 </html>
