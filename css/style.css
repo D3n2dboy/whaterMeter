@@ -1012,7 +1012,7 @@ p:not(:last-child) {
   width: 100%;
   z-index: 99999;
   background-color: rgb(255, 255, 255);
-  padding: 1.25rem;
+  padding: 1.25rem 0.9375rem;
   margin: 0 auto;
   max-width: 1370px;
 }
@@ -2826,6 +2826,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .header__body {
     border-right: 0;
     border-left: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1.25rem 0.9375rem;
   }
 
   .menu__item {
@@ -2938,12 +2942,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     left: -0.625rem;
     width: 2.5rem;
     height: 2.5rem;
-  }
-
-  .header__body {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 
   .header__main {
