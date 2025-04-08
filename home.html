@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250407225540">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250408154949">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,8 @@
 					<a href="/" class="header__logo">
 						<picture><source data-srcset="img/logo-new.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/logo-new.jpg" alt="logo"></picture>
 					</a>
+
+
 					<div class="header__main">
 						<div class="header__menu menu">
 							<nav class="menu__body">
@@ -33,7 +35,7 @@
 							</nav>
 						</div>
 						<div class="header__phone">
-							<a href="#" class="phone-callback">заказать <span>обратный</span> звонок</a>
+							<a href="#" data-popup="#popup" class="phone-callback">заказать <span>обратный</span> звонок</a>
 							<a class="phone-link _icon-phone" href="tel:123456789"><span>8 (912) 345-67-89</span></a>
 						</div>
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -44,9 +46,10 @@
 		<main class="page">
 
 			<div class="promo">
-				<div class="promo__image-ibg"><picture><source data-srcset="img/header/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/header/01.png" alt="promo"></picture></div>
+				<div class="promo__image-ibg">
+					<picture><source data-srcset="img/header/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/header/01.png" alt="promo"></picture>
+				</div>
 				<div class="promo__container">
-
 					<div class="promo__content">
 						<div class="promo__plus items-plus">
 							<div class="items-plus__item">
@@ -91,7 +94,7 @@
 								Номер аттестата нашей компании:
 							</div>
 							<div class="check__number">RA.RU.314724</div>
-							<a class="button __fw check__button _icon-shield" href="#popup" data-popup="#popup">Проверить
+							<a class="button __fw check__button _icon-shield" target="_blank" href="https://pub.fsa.gov.ru/ral/view/36600/applicant">Проверить
 								нас</a>
 						</div>
 					</div>
@@ -345,21 +348,32 @@
 								и получите качественную работу,
 								гарантированную безопасность и экономию ваших средств на коммунальных платежах.</p>
 						</div>
-						<ul class="about-us__items" data-gallery>
-							<li class="about-us__image-ibg" data-src="img/about/01.png">
-								<picture><source srcset="img/about/01.webp" type="image/webp"><img src="img/about/01.png" alt="01"></picture>
+
+						<!-- <a data-fancybox="gallery" href="img/about/about-new.jpg">
+							<picture><source srcset="img/about/about-new.webp" type="image/webp"><img src="img/about/about-new.jpg" /></picture>
+						</a>
+
+						<a data-fancybox="gallery" href="img/about/about.jpg">
+							<picture><source srcset="img/about/about.webp" type="image/webp"><img src="img/about/about.jpg" /></picture>
+						</a> -->
+
+
+
+						<ul class="about-us__items">
+							<li data-src="img/about/01.png" data-fancybox="gallery" class="about-us__image-ibg">
+								<picture><source data-srcset="img/about/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/about/01.png" alt="01"></picture>
 							</li>
-							<li class="about-us__image-ibg" data-src="img/about/02.png">
-								<picture><source srcset="img/about/02.webp" type="image/webp"><img src="img/about/02.png" alt="02"></picture>
+							<li data-src="img/about/02.png" data-fancybox="gallery" class="about-us__image-ibg">
+								<picture><source data-srcset="img/about/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/about/02.png" alt="02"></picture>
 							</li>
-							<li class="about-us__image-ibg" data-src="img/about/03.png">
-								<picture><source srcset="img/about/03.webp" type="image/webp"><img src="img/about/03.png" alt="02"></picture>
+							<li data-src="img/about/03.png" data-fancybox="gallery" class="about-us__image-ibg">
+								<picture><source data-srcset="img/about/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/about/03.png" alt="02"></picture>
 							</li>
-							<li class="about-us__image-ibg" data-src="img/about/04.png">
-								<picture><source srcset="img/about/04.webp" type="image/webp"><img src="img/about/04.png" alt="02"></picture>
+							<li data-src="img/about/04.png" data-fancybox="gallery" class="about-us__image-ibg">
+								<picture><source data-srcset="img/about/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/about/04.png" alt="02"></picture>
 							</li>
-							<li class="about-us__image-ibg" data-src="img/about/05.png">
-								<picture><source srcset="img/about/05.webp" type="image/webp"><img src="img/about/05.png" alt="02"></picture>
+							<li data-src="img/about/05.png" data-fancybox="gallery" class="about-us__image-ibg">
+								<picture><source data-srcset="img/about/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/about/05.png" alt="02"></picture>
 							</li>
 						</ul>
 					</div>
@@ -374,7 +388,7 @@
 									Номер аттестата нашей компании:
 								</div>
 								<div class="check__number">RA.RU.314724</div>
-								<a class="button __fw check__button _icon-shield" href="#popup" data-popup="#popup">Проверить
+								<a class="button __fw check__button _icon-shield" href="https://pub.fsa.gov.ru/ral/view/36600/applicant" target="_blank">Проверить
 									нас</a>
 							</div>
 						</div>
@@ -484,47 +498,10 @@
 								<picture><source srcset="img/docs/01.webp" type="image/webp"><img src="img/docs/01.jpg" alt="01"></picture>
 							</div>
 							<div class="item-document__title">Аттестат аккредитации компании АршинСервис</div>
-							<a href="#" class="button item-document__link _icon-arrow-up-right2">Проверить
-								аккредитацию</a>
-						</div>
-
-						<div class="documents__item item-document">
-							<div class="item-document__image-ibg">
-								<picture><source srcset="img/docs/01.webp" type="image/webp"><img src="img/docs/01.jpg" alt="01"></picture>
-							</div>
-							<div class="item-document__title">Аттестат аккредитации компании АршинСервис</div>
-							<a href="#" class="button item-document__link _icon-arrow-up-right2">Проверить
-								аккредитацию</a>
-						</div>
-
-						<div class="documents__item item-document">
-							<div class="item-document__image-ibg">
-								<picture><source srcset="img/docs/01.webp" type="image/webp"><img src="img/docs/01.jpg" alt="01"></picture>
-							</div>
-							<div class="item-document__title">Аттестат аккредитации компании АршинСервис</div>
-							<a href="#" class="button item-document__link _icon-arrow-up-right2">Проверить
-								аккредитацию</a>
-						</div>
-
-						<div class="documents__item item-document">
-							<div class="item-document__image-ibg">
-								<picture><source srcset="img/docs/01.webp" type="image/webp"><img src="img/docs/01.jpg" alt="01"></picture>
-							</div>
-							<div class="item-document__title">Аттестат аккредитации компании АршинСервис</div>
-							<a href="#" class="button item-document__link _icon-arrow-up-right2">Проверить
-								аккредитацию</a>
-						</div>
-
-						<div class="documents__item item-document">
-							<div class="item-document__image-ibg">
-								<picture><source srcset="img/docs/01.webp" type="image/webp"><img src="img/docs/01.jpg" alt="01"></picture>
-							</div>
-							<div class="item-document__title">Аттестат аккредитации компании АршинСервис</div>
-							<a href="#" class="button item-document__link _icon-arrow-up-right2">Проверить
+							<a href="https://pub.fsa.gov.ru/ral/view/36600/applicant" class="button item-document__link _icon-arrow-up-right2">Проверить
 								аккредитацию</a>
 						</div>
 					</div>
-
 				</div>
 			</section>
 
@@ -673,7 +650,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20250407225540"></script>
+	<script src="js/app.min.js?_v=20250408154949"></script>
 </body>
 
 </html>
